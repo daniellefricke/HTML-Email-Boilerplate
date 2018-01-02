@@ -7,47 +7,47 @@ README w/troubleshooting tips and tricks in progress!!!
 
 
 ### HIGH LEVEL BEST PRACTICES:
-      - <table> instead of <div>
-      - #FFFFFF instead of #FFF
-      - padding not margin
-      - CSS2 instead of CSS3
-      - HTML4 instead of HTML5
-      - background-color or bgcolor - not background
-      - HTML attributes instead of CSS
-      - Inline CSS instead of style sheets - Style in the head is needed too
-      - Set a preheader text for emails that show preview text
+      1. <table> instead of <div>
+      2. #FFFFFF instead of #FFF
+      3. padding not margin
+      4. CSS2 instead of CSS3
+      5. HTML4 instead of HTML5
+      6. background-color or bgcolor - not background
+      7. HTML attributes instead of CSS
+      8. Inline CSS instead of style sheets - Style in the head is needed too
+      9. Set a preheader text for emails that show preview text
           <span style="color: transparent; display: none !important; height: 0; max-height: 0; max-width: 0; opacity: 0; overflow: hidden; mso-hide: all; visibility: hidden; width: 0;">Preheader text goes here</span>
 
 
 ### EMAIL CLIENT BEST PRACTICES & FYIs:
     __Gmail:__
-      - Recognizes inline css & media-queries (as of 2016)
-      - CSS properties recognized by Gmail: https://developers.google.com/gmail/design/reference/supported_css
-      - Non-standard fonts from Google Fonts can be used with a webkit  specific media query
+      1. Recognizes inline css & media-queries (as of 2016)
+      2. CSS properties recognized by Gmail: https://developers.google.com/gmail/design/reference/supported_css
+      3. Non-standard fonts from Google Fonts can be used with a webkit  specific media query
               @import url(http://fonts.googleapis.com/css?family=Pacifico);
               @media screen and (-webkit-min-device-pixel-ratio:0) {
               }
-      - Gmail does not recognize media queries
+      4. Gmail does not recognize media queries
 
     __Outlook:__
-      - Conditionals can be used for MS specifics:
+      1. Conditionals can be used for MS specifics:
         <!--[if mso]>
           Only Microsoft Word-based versions of Outlook will see this.
         <![endif]-->
-      - Outlook does not automatically render images
+      2. Outlook does not automatically render images
 
     __Yahoo:__
-      - Does not recognize media queries
+      1. Does not recognize media queries
 
     __Windows Phone 8:__
-      - Does not recognize media queries
+      1. Does not recognize media queries
 
     __Apple Watch:__
-      - text/watch-html - displays only on Apple Watch (and any other clients that support this MIME type going forward): https://litmus.com/blog/how-to-send-hidden-version-email-apple-watch
+      1. text/watch-html - displays only on Apple Watch (and any other clients that support this MIME type going forward): https://litmus.com/blog/how-to-send-hidden-version-email-apple-watch
 
     __Other:__
-      - GIFs are supported by most email clients. MSO 2007/2013 do not, but render the first frame of GIF.
-      - Video is supported by iOS, AppleMail, and Outlook.com - https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email/
+      1. GIFs are supported by most email clients. MSO 2007/2013 do not, but render the first frame of GIF.
+      1. Video is supported by iOS, AppleMail, and Outlook.com - https://www.emailonacid.com/blog/article/email-development/a_how_to_guide_to_embedding_html5_video_in_email/
 
 
 ### FIXES:
