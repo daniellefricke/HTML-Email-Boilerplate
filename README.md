@@ -1,11 +1,11 @@
 README w/troubleshooting tips and tricks in progress!!!
 
-#HTML EMAIL BOILERPLATE
+#HTML EMAIL BOILERPLATE#
 
-##PURPOSE:
+##PURPOSE:##
   I started this repo after changing jobs and being assigned emails. I quickly found that while coding them is circa 1998, email clients treat them differently. There are tons of email coding specific websites, forums, and Stack Overflow questions with great answers out there. I'm compiling this repo with the most useful fixes I've found. This also helps me keep track of them.
 
-###HIGH LEVEL BEST PRACTICES:
+###HIGH LEVEL BEST PRACTICES:###
       - <table> instead of <div>
       - #FFFFFF instead of #FFF
       - padding not margin
